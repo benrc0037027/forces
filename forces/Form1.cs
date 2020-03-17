@@ -43,8 +43,17 @@ namespace forces
                 Force = 0.0;
 
             }
+            try
+            {
+                Angle = double.Parse(textBox2.Text);
+            }
+            catch
+            {
+                MessageBox.Show("type a number in the angle box");
+                Angle = 0.0;
 
-            Angle = double.Parse(textBox2.Text);
+            }
+            
 
             
 
